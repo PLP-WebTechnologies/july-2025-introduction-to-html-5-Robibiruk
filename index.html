@@ -1,65 +1,98 @@
-<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
-<html lang="en"> <!-- Sets the language of the page to English -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Robel's personal webpage showcasing hobbies, pharmacy courses, and contact information.">
     <meta name="keywords" content="Robel, personal website, pharmacy student, hobbies, courses, HTML5, web page">
     <meta name="author" content="Robel Biruk">
-            <title>My first Web Page</title>
-        </head>
-        <body>
-            <!-- headings -->
-             <!-- semantic html -->
-             <!-- header -->
-             <header>
-                <h1>Welcome to My Web Page</h1>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="mailto:natim7520@gmail.com">Contact</a>
-                </nav>
-             </header>
-             <!-- main primary content-->
-             <main>
-                <article>
-                    <p>This is my first Web Page</p>
-                    <p>I am so excited</p>
-                    <p>Very amazing</p>
-                    <p>My name is Robel Biruk, and I am a Pharmacy student at Addis Ababa University.</p>
-                    <p>I am currently in my second year of studies.</p>
-                </article>
-                <section>
-                    <h2>My favorite hobbies</h2>
-                    <ul>
-                        <li>Movies</li>
-                        <li>Playing Video games</li>
-                        <li>Watching football games</li>
-                        <li>Reading</li>
-                        <li>Listening to music</li>
-                        <li>Cooking</li>
-                    </ul>
-                    <h3>My favorite courses as a Pharmacy Student</h3>
-                    <ol type="I" start="1">
-                        <li>Pharmacology</li>
-                        <li>Medicinal Chemistry</li>
-                        <li>Integrated Pharmaceutical Practice</li>
-                    </ol>
-                    <p>HM: LOVE THE LAB RATS😻</p>
-                    <img src="labrat.jpg" alt="Cute lab RATS😻" width="300" height="200">
-                </section>
-                <aside>
-                    <h4>Contact details</h4>
-                    <a href="mailto:natim7520@gmail.com">Email me</a>
-                    <a href="tel:+251912345678">Call me</a>
-                    <a href="https://github.com/Robibiruk">GitHub Profile</a>
-                </aside>
-             </main>
-                <!--footer-->
-             <footer>
-                <p>Thank you for visiting my page!</p>
-                <p>&copy; 2025. Robel. All rights reserved.</p>
-             </footer>
-        </body>
-    </html>
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <article>
+                <p>This is my first Web Page</p>
+                <p>I am so excited</p>
+                <p>Very amazing</p>
+                <p>My name is Robel Biruk, and I am a Pharmacy student at Addis Ababa University.</p>
+                <p>I am currently in my second year of studies.</p>
+            </article>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>My Favorite Hobbies</h2>
+            <ul>
+                <li>Movies</li>
+                <li>Playing Video Games</li>
+                <li>Watching Football Games</li>
+                <li>Reading</li>
+                <li>Listening to Music</li>
+                <li>Cooking</li>
+            </ul>
+
+            <h3>My Favorite Courses as a Pharmacy Student</h3>
+            <ol type="I">
+                <li>Pharmacology</li>
+                <li>Medicinal Chemistry</li>
+                <li>Integrated Pharmaceutical Practice</li>
+            </ol>
+
+            <p>HM: LOVE THE LAB RATS 😻</p>
+            <img src="labrat.jpg" alt="Cute lab rats" width="300" height="200">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- Additional Contact Info -->
+            <aside>
+                <h3>Contact Details</h3>
+                <ul>
+                    <li><a href="mailto:natim7520@gmail.com">Email me</a></li>
+                    <li><a href="tel:+251912345678">Call me</a></li>
+                    <li><a href="https://github.com/Robibiruk" target="_blank">GitHub Profile</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Thank you for visiting my page!</p>
+        <p>&copy; 2025 Robel Biruk. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
